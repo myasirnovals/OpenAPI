@@ -1,0 +1,49 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Todolist RESTful OpenAPI",
+    "version": "1",
+    "description": "OpenAPI for Todolist RESTful API",
+    "termsOfService": "https://www.iyytechnology.org",
+    "contact": {
+      "name": "Muhamad Yasir Noval",
+      "email": "myasirnoval@gmail.com",
+      "url": "https://www.iyytechnology.org"
+    },
+    "license": {
+      "name": "APACHE 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  },
+  "servers": [
+    {
+      "description": "Todolist RESTful API Server",
+      "url": "https://{environment}.iyytechnology.org/api/v1",
+      "variables": {
+        "environment": {
+          "description": "Server Environment",
+          "default": "dev",
+          "enum": [
+            "dev",
+            "qa",
+            "prod"
+          ]
+        }
+      }
+    }
+  ],
+  "externalDocs": {
+    "description": "YouTube Programmer Zaman Now",
+    "url": "https://www.youtube.com/c/ProgrammerZamanNow"
+  },
+  "paths": {
+    "/todolist": {
+      "get": {},
+      "post": {}
+    },
+    "/todolist/{todolistId}": {
+      "put": {},
+      "delete": {}
+    }
+  }
+}
